@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 80px;
+}
+.to-do{
+    background-color: #eee;
+    padding: 40px;
+    margin: 40px 0 30px;
+    border-radius: 15px;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+}
+.to-do input[type="text"]{
+    flex-basis: 80%;
+    margin-right: 15px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 25px;
+    border: #ddd solid 1px;
+    caret-color: #ff0884;
+}
+.to-do input[type="text"]:focus{
+    outline: none;
+}
+.add{
+    flex-basis: 20%;
+    color: white;
+    background-color: #ff0884;
+    border-radius: 10px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add:hover{
+    background-color: #ff0999;
+}
+.tasklist{
+    background-color: #eee;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80vw;
+    margin-bottom: 20px;
+}
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    font-size: 25px;
+}
+.task:not(:last-child){
+    margin-bottom: 20px;
+}
+.task p {
+    margin: 0;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+.task button{
+    background-color: #ff0884;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    flex-basis: 10%;
+    max-height: 50px;
+    transition: .3s;
+}
+.task button:hover{
+    background-color: #ff0999;
+}
+::-webkit-scrollbar {
+  width: 8px; 
+}
+::-webkit-scrollbar-thumb {
+  background: #ff0884;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0884; 
+}
